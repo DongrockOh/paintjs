@@ -8,8 +8,12 @@
     <title>PaintJS</title>
   </head>
   <body>
+    <!-- canvas는 width 및 height 두 속성만 있음 / DOM 프로퍼티를 사용하여 설정도 가능 -->
     <canvas id="jsCanvas" class="canvas"></canvas>
+
+    <!-- 전체 controls -->
     <div class="controls">
+      <!-- brush 크기조절 controls -->
       <div class="controls__range">
         <input
           type="range"
@@ -20,10 +24,14 @@
           step="0.1"
         />
       </div>
+
+      <!-- btn controls -->
       <div class="controls__btns">
         <button id="jsMode">Fill</button>
         <button id="jsSave">Save</button>
       </div>
+
+      <!-- colors별 controls -->
       <div class="controls__colors" id="jsColors">
         <div
           class="controls__color jsColor"
